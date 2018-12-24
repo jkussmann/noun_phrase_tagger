@@ -1,5 +1,10 @@
-import spacy
-spacy_nlp = spacy.load('en_core_web_sm')
+"""
+This module contains common nlp functions
+"""
 
+import spacy
 from nltk.tokenize import RegexpTokenizer
-tokenizer = RegexpTokenizer(r'\w+')
+
+SPACY_NLP = spacy.load("en_core_web_sm")
+
+TOKENIZER = RegexpTokenizer(r"\w+")
