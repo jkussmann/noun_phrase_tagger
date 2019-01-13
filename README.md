@@ -41,6 +41,22 @@ Ending Program ...
 c:\noun_phrase_tagger>
 ```
 
+## Testing
+
+To run unit tests on the code, open a command line window and change to the directory where the code is located.
+The test waits for 2 minutes to give the Stanford Core NLP server time to get started and initialize.
+The wait time may have to be lengthened depending on system speed. Warnings have been suppressed due to file
+open and socket warnings. The warning suppression will be removed as the tests are improved.
+
+```
+C:\noun_phrase_tagger>python test_np_unittest.py
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.236s
+
+OK
+```
+
 ## Author
 
 * **John Kussmann** - *Initial work*
